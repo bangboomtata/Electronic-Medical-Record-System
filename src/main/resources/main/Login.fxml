@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginPageController">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="589.0" minWidth="10.0" prefWidth="543.6666259765625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.0" minWidth="10.0" prefWidth="305.66670735677076" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="206.33334350585938" minHeight="10.0" prefHeight="161.00001017252603" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="281.6666564941406" minHeight="10.0" prefHeight="164.0000203450521" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="131.3333740234375" minHeight="10.0" prefHeight="127.99997965494794" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="589.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="4">
+               <image>
+                  <Image url="@../systemImg/Blue%20and%20White%20Illustrated%20World%20Diabetes%20Day%20Poster.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME :)" textAlignment="CENTER" wrappingWidth="304.426513671875">
+                     <font>
+                        <Font name="Headline R" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="BASELINE_RIGHT" layoutX="554.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button id="loginbutton " fx:id="button" alignment="CENTER" onAction="#login" prefHeight="60.0" prefWidth="159.0" style="-fx-background-color: black;" text="LOGIN" textFill="#f6f6f6">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="554.0" layoutY="392.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField id="username" fx:id="usernameTB" prefHeight="95.0" prefWidth="304.0" promptText="Username: (Your PatientID)" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="554.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <PasswordField fx:id="passwordTB" prefHeight="95.0" promptText="Password: (Your NationalID)" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

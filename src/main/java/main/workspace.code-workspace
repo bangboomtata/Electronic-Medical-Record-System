@@ -1,0 +1,29 @@
+{
+	"folders": [],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lonely",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.base.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.controls.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.fxml.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.graphics.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.media.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.swing.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx.web.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-20\\lib\\javafx-swt.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.base.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.controls.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.fxml.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.graphics.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.media.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.swing.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx.web.jar",
+			"c:\\Program Files\\Java\\javafx-sdk-17.0.7\\lib\\javafx-swt.jar"
+		],
+		"java.debug.settings.onBuildFailureProceed": true,
+		"java.project.sourcePaths": [
+			"src"
+		]
+	}
+}

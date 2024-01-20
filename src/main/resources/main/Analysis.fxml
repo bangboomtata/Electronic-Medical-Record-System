@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnalysisController">
+   <center>
+      <ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="660.0" prefWidth="709.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.66668701171875" minWidth="10.0" prefWidth="149.33331298828125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.9999694824219" minWidth="10.0" prefWidth="135.33333333333334" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.66662597656244" minWidth="10.0" prefWidth="143.33333333333331" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.33330281575525" minWidth="10.0" prefWidth="137.33335367838538" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.33330281575525" minWidth="10.0" prefWidth="129.99997965494788" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="107.33333587646484" minHeight="1.9073486328125E-6" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="143.66667938232422" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.12766664123535" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.66664123535156" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.66664123535156" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="143.66667938232422" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.66664123535156" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.66664123535156" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.66671752929682" minHeight="0.0" prefHeight="19.999949137369754" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.66668701171875" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.66668701171875" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="209.0" style="-fx-background-color: #2F4F4F; -fx-border-radius: 90px;" text="Treatment Course" textAlignment="CENTER" textFill="WHITE" GridPane.columnSpan="2">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Date" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label id="startdate" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="49.0" prefWidth="726.0" style="-fx-background-color: #2f4f4f;" text="Diagnosis Test" textAlignment="CENTER" textFill="WHITE" GridPane.columnSpan="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Test" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="313.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Test" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="381.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Result" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="353.0" layoutY="103.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #F5FFFA;" text="FPG" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <DatePicker fx:id="analysisDatePicker" blendMode="DARKEN" opacity="0.54" prefHeight="59.0" prefWidth="564.0" promptText="Select Date" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </DatePicker>
+                  <Label id="startdate" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="53.0" prefWidth="726.0" style="-fx-background-color: #2f4f4f;" text="Type Test" textAlignment="CENTER" textFill="WHITE" GridPane.columnSpan="5" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="176.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #F5FFFA;" text="HbA1c" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="176.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #F5FFFA;" text="OGTT" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="443.0" layoutY="176.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #F5FFFA;" text="RPG" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="176.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Result" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="237.0" prefHeight="68.0" prefWidth="195.0" style="-fx-background-color: #D7F9F8;" text="Analysis" textAlignment="CENTER" textFill="DARKSLATEGRAY" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField id="hb1acResult" fx:id="hResult" alignment="CENTER" prefHeight="68.0" prefWidth="157.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fpgResult" fx:id="fResult" alignment="CENTER" layoutX="159.0" layoutY="233.0" prefHeight="68.0" prefWidth="157.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="ogttResult" fx:id="oResult" alignment="CENTER" layoutX="293.0" layoutY="233.0" prefHeight="68.0" prefWidth="157.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="rpgResult" fx:id="rResult" alignment="CENTER" layoutX="435.0" layoutY="233.0" prefHeight="68.0" prefWidth="157.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="hb1acAnalysis" fx:id="hAnalysis" alignment="CENTER" disable="true" prefHeight="68.0" prefWidth="157.0" promptText="Analysis" style="-fx-background-color: WHITE; -fx-text-fill: black;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fpgAnalysis" fx:id="fAnalysis" alignment="CENTER" disable="true" layoutX="159.0" layoutY="298.0" prefHeight="68.0" prefWidth="157.0" promptText="Analysis" style="-fx-background-color: WHITE; -fx-text-fill: black;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="ogttAnalysis" fx:id="oAnalysis" alignment="CENTER" disable="true" layoutX="293.0" layoutY="298.0" prefHeight="68.0" prefWidth="157.0" promptText="Analysis" style="-fx-background-color: WHITE; -fx-text-fill: black;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="rpgAnalysis" fx:id="rAnalysis" alignment="CENTER" disable="true" layoutX="435.0" layoutY="298.0" prefHeight="68.0" prefWidth="157.0" promptText="Analysis" style="-fx-background-color: WHITE; -fx-text-fill: black;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="176.0" prefHeight="54.0" prefWidth="285.0" style="-fx-background-color: #F5FFFA;" text="Genetic Testing" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="403.0" prefHeight="61.0" prefWidth="280.0" style="-fx-background-color: #F5FFFA;" text="Autoantibodies" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField id="genResult" fx:id="geneticResult" alignment="CENTER" layoutX="159.0" layoutY="230.0" prefHeight="68.0" prefWidth="280.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="aabesult" fx:id="antibodyResult" alignment="CENTER" layoutX="159.0" layoutY="460.0" prefHeight="68.0" prefWidth="280.0" promptText="Result" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="hb1acResult" fx:id="treatmentID" alignment="CENTER_RIGHT" disable="true" prefHeight="68.0" prefWidth="157.0" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="68.0" prefWidth="195.0" text="Treatment ID :" textAlignment="CENTER" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField id="treatmentID" fx:id="treatmentID" alignment="CENTER" disable="true" editable="false" prefHeight="68.0" prefWidth="157.0" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Save" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</BorderPane>

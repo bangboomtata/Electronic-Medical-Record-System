@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #e2ecf6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.procedureItemController">
+   <children>
+      <ImageView fx:id="procedureImg" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-min-width: 55;">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="44.0" prefWidth="128.0">
+         <children>
+            <Label fx:id="procedureIDLabel" text="Label" textFill="#1c55a1">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="procedureTypeLabel" text="Label" textFill="#1c55a1">
+               <font>
+                  <Font name="Consolas Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="procedureDateLabel" text="Label" textFill="#1c55a1">
+               <font>
+                  <Font name="Consolas Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="2.5" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
+   </padding>
+</HBox>

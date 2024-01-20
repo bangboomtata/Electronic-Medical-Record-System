@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientFormController">
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+   <center>
+      <ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="651.0" prefWidth="697.0" snapToPixel="false">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="78.6666514078776" minHeight="10.0" prefHeight="47.33333841959636" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="107.33334350585938" minHeight="10.0" prefHeight="54.00001017252603" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="170.66664632161456" minHeight="0.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="260.66667683919275" minHeight="10.0" prefHeight="54.33333333333334" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.33331298828125" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="229.3333028157552" minHeight="0.0" prefHeight="53.33331298828125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="184.66668701171875" minHeight="0.0" prefHeight="52.666666666666686" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="164.66666666666663" minHeight="0.0" prefHeight="53.33331298828125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.33333333333337" minHeight="0.0" prefHeight="60.66668701171875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="96.33333333333337" minHeight="7.33331298828125" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="85.3333740234375" minHeight="10.0" prefHeight="55.33333333333337" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="85.3333740234375" minHeight="10.0" prefHeight="55.33333333333337" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="252.0" style="-fx-background-color: #253556; -fx-border-radius: 90px;" text="Patient Information" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="51.0" prefWidth="158.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="176.0" style="-fx-background-color: #deeafa;" text="Patient ID" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="patientIDTB" prefHeight="68.0" prefWidth="351.0" promptText="Patient ID" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="54.0" prefWidth="174.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Name" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="57.0" prefWidth="150.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="National ID" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <children>
+                        <TextField fx:id="nameTB" prefHeight="68.0" prefWidth="401.0" promptText="Name" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <TextField fx:id="nationalIDTB" prefHeight="68.0" prefWidth="348.0" promptText="National ID" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Blood Type" textAlignment="CENTER" textFill="MIDNIGHTBLUE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox layoutX="10.0" layoutY="167.0" prefHeight="57.0" prefWidth="150.0" GridPane.rowIndex="4">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Date of Birth" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="168.0" layoutY="113.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <DatePicker fx:id="dOB" editable="false" opacity="0.54" prefHeight="68.0" prefWidth="174.0">
+                           <effect>
+                              <ColorAdjust brightness="0.36" saturation="-1.0" />
+                           </effect>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="10.0" layoutY="218.0" prefHeight="57.0" prefWidth="150.0" GridPane.rowIndex="5">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Marital Status" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="150.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Email Address" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <TextField fx:id="emailTB" prefHeight="68.0" prefWidth="526.0" promptText="Email Address" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="150.0" GridPane.rowIndex="7">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="House Address" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="7">
+                     <children>
+                        <TextField fx:id="addressTB" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="527.0" promptText="House Address" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="168.0" layoutY="321.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <TextField fx:id="bloodTypeTB" prefHeight="68.0" prefWidth="348.0" promptText="Blood Type" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="10.0" layoutY="213.0" prefHeight="57.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Gender" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" layoutX="534.0" layoutY="159.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: white;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <RadioButton fx:id="maleRadio" mnemonicParsing="false" selected="true" text="Male">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="gender" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleRadio" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="9.0" layoutY="9.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="8">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="700.0" style="-fx-background-color: #253556; -fx-border-radius: 90px;" text="Emergency Contact Person Details" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="359.0" layoutY="200.0" prefHeight="57.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Occupation" textAlignment="CENTER" textFill="MIDNIGHTBLUE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="534.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <TextField fx:id="occupationTB" prefHeight="68.0" prefWidth="348.0" promptText="Occupation" style="-fx-background-color: WHITE; -fx-text-fill: grey;">
+                           <font>
+                              <Font name="Book Antiqua" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Name" textAlignment="CENTER" textFill="MIDNIGHTBLUE" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="9.0" layoutY="488.0" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Contact Number" textAlignment="CENTER" textFill="MIDNIGHTBLUE" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="eNameTB" prefHeight="68.0" prefWidth="527.0" promptText="Name" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="eContactTB" prefHeight="68.0" prefWidth="348.0" promptText="Contact Number" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Relationship" textAlignment="CENTER" textFill="MIDNIGHTBLUE" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="eRelationshipTB" layoutX="183.0" layoutY="543.0" prefHeight="68.0" prefWidth="348.0" promptText="Relationship" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="formButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="37.0" prefWidth="161.0" style="-fx-background-color: #253556; -fx-text-fill: white;" text="Create" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Goudy Old Style Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label contentDisplay="CENTER" prefHeight="68.0" prefWidth="174.0" style="-fx-background-color: #deeafa;" text="Contact" textAlignment="CENTER" textFill="MIDNIGHTBLUE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="contactTB" prefHeight="68.0" prefWidth="348.0" promptText="Contact" style="-fx-background-color: WHITE; -fx-text-fill: grey;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Book Antiqua" size="12.0" />
+                     </font>
+                  </TextField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <RadioButton fx:id="marriedRadio" mnemonicParsing="false" selected="true" text="Married">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="maritalStatus" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="notMarriedRadio" mnemonicParsing="false" text="Not Married" toggleGroup="$maritalStatus" />
+                     </children>
+                  </HBox>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toMainPage" prefHeight="37.0" prefWidth="161.0" style="-fx-background-color: #253556; -fx-text-fill: white;" text="Back" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Goudy Old Style Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="imgStackPane" stylesheets="@../css/style.css" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <children>
+                        <ImageView fx:id="patientImg" fitHeight="108.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" styleClass="formImgView">
+                           <image>
+                              <Image url="@../patientImg/anonymous.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imgText" prefHeight="23.0" prefWidth="109.0" styleClass="formImgLabel" text="Click to Upload">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="15.5" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,39 @@
+.container {
+    -fx-border-color:white ;
+    -fx-border-width: 1px;
+    -fx-padding: 7.5px;
+}
+
+.infoLabel {
+    -fx-margin-bottom: 5px;
+}
+
+.border {
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+
+.blueContainer {
+    -fx-font-family: 'Berlin Sans FB Demi';
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    padding-left: 5px;
+    -fx-background-color:  #D7F9F8;
+    -fx-color:  #2F4F4F;
+}
+
+.imgStackPane:hover .formImgView{
+    -fx-opacity: 0.6;
+}
+
+.imgStackPane:hover .formImgLabel {
+    -fx-opacity: 1;
+}
+
+.formImgLabel {
+    -fx-opacity: 0;
+    -fx-transition: 0.4s;
+}
+.formImgView {
+    -fx-transition: 0.4s;
+}

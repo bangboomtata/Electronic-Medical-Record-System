@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: #253556;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.patientItemController">
+   <children>
+      <ImageView fx:id="patientImg" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-min-width: 55;">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="44.0" prefWidth="128.0">
+         <children>
+            <Label fx:id="nameLabel" text="Label" textFill="#def9fb">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font></Label>
+            <Label fx:id="idLabel" text="Label" textFill="#def9fb">
+               <font>
+                  <Font name="Consolas Italic" size="12.0" />
+               </font></Label>
+            <Label fx:id="diseaseLabel" text="Label" textFill="#def9fb">
+               <font>
+                  <Font name="Consolas Italic" size="12.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets left="2.5" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
+   </padding>
+</HBox>
